@@ -21,15 +21,8 @@ namespace WindowsFormsApplication6
             //set my label to my bet's description, and the label on my
             
 
-            if (myBet == null)
-            {
-                myLabel.Text = name + " hasn't placed a bet";
-            }
-            else
-                myLabel.Text = myBet.GetDescription();
-
             // radio button to show my cash ('Joe has 43 bucks')
-            myRadioButton.Text = name + " has " + cash + " bucks";
+      
         }
         public void ClearBet() 
         {
@@ -40,11 +33,6 @@ namespace WindowsFormsApplication6
         public bool PlaceBet(int amount, int Dog)
         {
             Bet myBet = new Bet();
-            if (cash < amount)
-            {
-                return false;
-            }
-            return true;
 
             //place a new bet and store it in my bet field
             //return true if the guy had enough money to bet
