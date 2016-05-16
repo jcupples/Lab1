@@ -16,28 +16,35 @@ namespace WindowsFormsApplication6
         public int Location = 0; //My location on racetrack
         public Random Randomizer; //instance of Random
 
-        public int[] Dog = new int[4];
+        
 
-        public bool Run()
+        public bool Run() //use randomizer like in the sub shop example
         {
-            //intialize new randomizer
-            //Randomizer = new Random();
+            //Random Randomizer = new Random();
 
-            while (isWinner == false)
-            {
-                for (int i = 1; i < Dog.Length; i++)
-                {
-                    Randomizer = new Random();
+            int randomMovement = Randomizer.Next(1, 4);
+
+            Point currentPos = myPictureBox.Location;
+            currentPos.X += randomMovement;
+            myPictureBox.Location = currentPos;
+
                     //Move forward either 1,2, 3, or 4 spaces at random
                     //update the position of my picture box on form
                     //return true if I won the race
-                }
+
+            if (currentPos.X >= RaceTrackLength)
+            {
+                return true;
             }
+            else
+                return false;
+           
         }
 
         public void TakeStartingPosition()
         {
             //reset location to the start line
+            //StartingPosition = 0;
             Location = 0;
         }
 

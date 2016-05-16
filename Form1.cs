@@ -12,18 +12,23 @@ namespace WindowsFormsApplication6
     public partial class Form1 : Form
     {
 
-        Guy joe;
-        Guy bob;
-        Guy al;
+        //initialize dog and guy arrays
+        Greyhound[] dogs = new Greyhound[4];
+        Guy[] guys = new Guy[3];
+
 
         public Form1()
         {
             InitializeComponent();
+        }
 
-            joe = new Guy() { cash = 50, name = "Joe" };
-            bob = new Guy() { cash = 75, name = "Bob" };
-            al = new Guy() { cash = 45, name = "Al" };
+        private void betButton_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void raceButton_Click(object sender, EventArgs e)
+        {
 
         }
     }
