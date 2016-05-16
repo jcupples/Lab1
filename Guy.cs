@@ -44,6 +44,13 @@ namespace WindowsFormsApplication6
 
             //place a new bet and store it in my bet field
             //return true if the guy had enough money to bet
+
+            if (amount >= cash)
+            {
+                return false;
+            }
+            else
+                return true;
         }
 
         public void Collect(int Winner) { } //ask my bet to pay out

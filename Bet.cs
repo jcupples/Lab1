@@ -18,6 +18,12 @@ namespace WindowsFormsApplication6
             //dog #4"). If the amount is zero, no bet was placed
             //("Joe hasn't placed a Bet.")
 
+            if (amount > 0)
+            {
+                 return Bettor.name + " bets " + amount + "on dog #" + Dog;
+            }
+            else
+                return Bettor.name + " has not placed a bet!";
         }
 
         public int PayOut(int Winner)
@@ -26,6 +32,13 @@ namespace WindowsFormsApplication6
             //the parameter is the winner of the race. if the dog won, 
             //returns the amount bet. Otherwise, return the negative of
             //the amount bet. 
+
+            if (Dog == Winner)
+            {
+                return amount;
+            }
+            else
+                return -amount;
         }
     }
 }
