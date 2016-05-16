@@ -19,9 +19,17 @@ namespace WindowsFormsApplication6
         public void UpdateLabels()
         {
             //set my label to my bet's description, and the label on my
-            
-
             // radio button to show my cash ('Joe has 43 bucks')
+
+            if (myBet == null)
+            {
+                myLabel.Text = name + " hasn't placed a bet";
+            }
+            else {
+                myLabel.Text = myBet.GetDescription();
+            }
+
+            myRadioButton.Text = name + " has " + cash + " bucks";
       
         }
         public void ClearBet() 
