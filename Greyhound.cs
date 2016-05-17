@@ -44,7 +44,7 @@ namespace WindowsFormsApplication6
         public void TakeStartingPosition()
         {
             //reset location to the start line
-            //StartingPosition = 0;
+            StartingPosition = 0;
             Location = 0;
         }
 

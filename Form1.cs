@@ -83,11 +83,25 @@ namespace WindowsFormsApplication6
                         MessageBox.Show("You can not bet this amount!", "Unable to bet amount");
                     }
                 }
+                //Update the labels
          }
 
         private void raceButton_Click(object sender, EventArgs e)
         {
 
-        }
-    }
-}
+            bool noWinner = true;
+            int dogWon;
+
+                while (noWinner)
+	            {
+	                for (int i = 0; i < dogs.Length; i++)
+			            {
+			                if(dogs[i].Run()) {
+                                dogWon = i + 1;
+                            }
+			            }        
+	            }
+                    }
+	            }
+            };
+
