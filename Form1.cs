@@ -45,14 +45,45 @@ namespace WindowsFormsApplication6
                 myRadioButton = alRadioButton, 
                 name = "Al" 
             };
+           
 
-            //dogs
+            //dogs picturebox initialization
+
+            dogs[0].myPictureBox = dogPictureBox1;
+            dogs[1].myPictureBox = dogPictureBox2;
+            dogs[2].myPictureBox = dogPictureBox3;
+            dogs[3].myPictureBox = dogPictureBox4;
         }
 
         private void betButton_Click(object sender, EventArgs e)
         {
+            
+                if (sender == alRadioButton)
+                {
 
-        }
+                    if (!guys[2].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value)) 
+                    {
+                        //display message saying you can't bet that amount	
+                        MessageBox.Show("You can not bet this amount.", "Unable to bet amount");
+                    }
+                }
+                else if (sender == joeRadioButton)
+                {
+                    if (!guys[0].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
+                    {
+                        //display message saying you can't bet that amount	
+                        MessageBox.Show("You can not bet this amount.", "Unable to bet amount");
+                    }
+                }
+                else if (sender == bobRadioButton)
+                {
+                    if (!guys[2].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
+                    {
+                        //display message saying you can't bet that amount	
+                        MessageBox.Show("You can not bet this amount!", "Unable to bet amount");
+                    }
+                }
+         }
 
         private void raceButton_Click(object sender, EventArgs e)
         {

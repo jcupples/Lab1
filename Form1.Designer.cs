@@ -203,7 +203,7 @@
             // betButton
             // 
             this.betButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.betButton.Location = new System.Drawing.Point(71, 139);
+            this.betButton.Location = new System.Drawing.Point(57, 141);
             this.betButton.Name = "betButton";
             this.betButton.Size = new System.Drawing.Size(70, 23);
             this.betButton.TabIndex = 6;
