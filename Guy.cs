@@ -40,7 +40,11 @@ namespace WindowsFormsApplication6
 
         public bool PlaceBet(int amount, int Dog)
         {
-            Bet myBet = new Bet();
+            //Bet myBet = new Bet();
+
+            myBet.Dog = Dog;
+            myBet.amount = amount;
+            myBet.Bettor = this;
 
             //place a new bet and store it in my bet field
             //return true if the guy had enough money to bet
@@ -53,7 +57,9 @@ namespace WindowsFormsApplication6
                 return true;
         }
 
-        public void Collect(int Winner) { } //ask my bet to pay out
+        public void Collect(int Winner) {
+            cash += myBet.PayOut(Winner);
+        } //ask my bet to pay out
     }
 }
 

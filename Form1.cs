@@ -20,6 +20,18 @@ namespace WindowsFormsApplication6
         public Form1()
         {
             InitializeComponent();
+
+            //guys object initialization
+            guys[0] = new Guy() { 
+                cash = 50, myLabel = label4, myRadioButton = joeRadioButton, name = "Joe" };
+
+            guys[1] = new Guy() {
+                cash = 75, myLabel = label5, myRadioButton = bobRadioButton, name = "Bob" };
+
+            guys[2] = new Guy() {
+                cash = 45, myLabel = label6, myRadioButton = alRadioButton, name = "Al" };
+
+            //dogs
         }
 
         private void betButton_Click(object sender, EventArgs e)
