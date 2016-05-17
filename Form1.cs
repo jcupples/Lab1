@@ -77,7 +77,7 @@ namespace WindowsFormsApplication6
                 }
                 else if (sender == bobRadioButton)
                 {
-                    if (!guys[2].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
+                    if (!guys[1].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
                     {
                         //display message saying you can't bet that amount	
                         MessageBox.Show("You can not bet this amount!", "Unable to bet amount");
