@@ -22,14 +22,29 @@ namespace WindowsFormsApplication6
             InitializeComponent();
 
             //guys object initialization
-            guys[0] = new Guy() { 
-                cash = 50, myLabel = label4, myRadioButton = joeRadioButton, name = "Joe" };
+            guys[0] = new Guy() 
+            { 
+                cash = 50, 
+                myLabel = label4, 
+                myRadioButton = joeRadioButton, 
+                name = "Joe" 
+            };
 
-            guys[1] = new Guy() {
-                cash = 75, myLabel = label5, myRadioButton = bobRadioButton, name = "Bob" };
+            guys[1] = new Guy() 
+            {
+                cash = 75, 
+                myLabel = label5, 
+                myRadioButton = bobRadioButton, 
+                name = "Bob" 
+            };
 
-            guys[2] = new Guy() {
-                cash = 45, myLabel = label6, myRadioButton = alRadioButton, name = "Al" };
+            guys[2] = new Guy() 
+            {
+                cash = 45, 
+                myLabel = label6, 
+                myRadioButton = alRadioButton, 
+                name = "Al" 
+            };
 
             //dogs
         }

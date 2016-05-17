@@ -45,18 +45,18 @@
             this.bobRadioButton = new System.Windows.Forms.RadioButton();
             this.joeRadioButton = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.dogPictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dogPictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dogPictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dogPictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -257,55 +257,55 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Minimum Bet";
             // 
-            // pictureBox2
+            // dogPictureBox1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(83, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
+            this.dogPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("dogPictureBox1.Image")));
+            this.dogPictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.dogPictureBox1.Name = "dogPictureBox1";
+            this.dogPictureBox1.Size = new System.Drawing.Size(83, 36);
+            this.dogPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dogPictureBox1.TabIndex = 16;
+            this.dogPictureBox1.TabStop = false;
             // 
-            // pictureBox3
+            // dogPictureBox2
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 64);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(83, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
+            this.dogPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("dogPictureBox2.Image")));
+            this.dogPictureBox2.Location = new System.Drawing.Point(12, 64);
+            this.dogPictureBox2.Name = "dogPictureBox2";
+            this.dogPictureBox2.Size = new System.Drawing.Size(83, 36);
+            this.dogPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dogPictureBox2.TabIndex = 17;
+            this.dogPictureBox2.TabStop = false;
             // 
-            // pictureBox4
+            // dogPictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 170);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(83, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
+            this.dogPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("dogPictureBox4.Image")));
+            this.dogPictureBox4.Location = new System.Drawing.Point(12, 170);
+            this.dogPictureBox4.Name = "dogPictureBox4";
+            this.dogPictureBox4.Size = new System.Drawing.Size(83, 36);
+            this.dogPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dogPictureBox4.TabIndex = 18;
+            this.dogPictureBox4.TabStop = false;
             // 
-            // pictureBox5
+            // dogPictureBox3
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 119);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(83, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
+            this.dogPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("dogPictureBox3.Image")));
+            this.dogPictureBox3.Location = new System.Drawing.Point(12, 119);
+            this.dogPictureBox3.Name = "dogPictureBox3";
+            this.dogPictureBox3.Size = new System.Drawing.Size(83, 36);
+            this.dogPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dogPictureBox3.TabIndex = 19;
+            this.dogPictureBox3.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 420);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.dogPictureBox3);
+            this.Controls.Add(this.dogPictureBox4);
+            this.Controls.Add(this.dogPictureBox2);
+            this.Controls.Add(this.dogPictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -315,10 +315,10 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,10 +341,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label betsLabel;
         private System.Windows.Forms.Button raceButton;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox dogPictureBox1;
+        private System.Windows.Forms.PictureBox dogPictureBox2;
+        private System.Windows.Forms.PictureBox dogPictureBox4;
+        private System.Windows.Forms.PictureBox dogPictureBox3;
     }
 }
 
