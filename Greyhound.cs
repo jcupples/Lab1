@@ -18,7 +18,7 @@ namespace WindowsFormsApplication6
 
         
 
-        public bool Run() //use randomizer like in the sub shop example
+        public bool Run()
         {
             //Random Randomizer = new Random();
 

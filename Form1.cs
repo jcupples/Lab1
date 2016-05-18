@@ -94,37 +94,23 @@ namespace WindowsFormsApplication6
 
         private void betButton_Click(object sender, EventArgs e)
         {
+            
+            if (joeRadioButton.Checked)
+            {
+                guys[0].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value);
+            }
 
-            if (sender == alRadioButton)
+            if (bobRadioButton.Checked)
             {
+                guys[1].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value);
+            }
 
-                if (!guys[2].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
-                {
-                    //display message saying you can't bet that amount	
-                    MessageBox.Show("You can not bet this amount.", "Unable to bet amount");
-                }
-            }
-            else if (sender == joeRadioButton)
+            if (alRadioButton.Checked)
             {
-                if (!guys[0].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
-                {
-                    //display message saying you can't bet that amount	
-                    MessageBox.Show("You can not bet this amount.", "Unable to bet amount");
-                }
+                guys[2].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value);
             }
-            else if (sender == bobRadioButton)
-            {
-                if (!guys[1].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value))
-                {
-                    //display message saying you can't bet that amount	
-                    MessageBox.Show("You can not bet this amount!", "Unable to bet amount");
-                }
-            }
-            for (int i = 0; i < guys.Length; i++)
-            {
-                guys[i].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value);
-                guys[i].UpdateLabels();
-            }
+
+
         }
 
         private void raceButton_Click(object sender, EventArgs e)
@@ -135,14 +121,17 @@ namespace WindowsFormsApplication6
 
             while (noWinner)
             {
+                Application.DoEvents();
+
                 for (int i = 0; i < dogs.Length; i++)
                 {
                     if (dogs[i].Run())
                     {
                         dogWon = i + 1;
+                        MessageBox.Show("The Winner is dog #" + dogWon, "Winner!");
                     }
                 }
-                Application.DoEvents();
+                
             }
         }
 
