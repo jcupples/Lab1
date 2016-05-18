@@ -44,7 +44,7 @@ namespace WindowsFormsApplication6
         public void TakeStartingPosition()
         {
             //reset location to the start line
-            StartingPosition = 0;
+            myPictureBox.Left = StartingPosition;
             Location = 0;
         }
 

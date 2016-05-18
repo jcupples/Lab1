@@ -15,6 +15,7 @@ namespace WindowsFormsApplication6
         //initialize dog and guy arrays
         Greyhound[] dogs = new Greyhound[4];
         Guy[] guys = new Guy[3];
+        Random myRandom = new Random();
 
 
         public Form1()
@@ -25,15 +26,16 @@ namespace WindowsFormsApplication6
             guys[0] = new Guy()
             {
                 cash = 50,
-                myLabel = label4,
+                myLabel = joeBetLabel,
                 myRadioButton = joeRadioButton,
                 name = "Joe"
+                
             };
 
             guys[1] = new Guy()
             {
                 cash = 75,
-                myLabel = label5,
+                myLabel = bobBetLabel,
                 myRadioButton = bobRadioButton,
                 name = "Bob"
             };
@@ -41,18 +43,53 @@ namespace WindowsFormsApplication6
             guys[2] = new Guy()
             {
                 cash = 45,
-                myLabel = label6,
+                myLabel = alBetLabel,
                 myRadioButton = alRadioButton,
-                name = "Al"
+                name = "Al",
+                
             };
 
+            for (int i = 0; i < guys.Length; i++)
+            {
+                guys[i].UpdateLabels();
+            }
+          
 
-            //dogs picturebox initialization
 
-            dogs[0].myPictureBox = dogPictureBox1;
-            dogs[1].myPictureBox = dogPictureBox2;
-            dogs[2].myPictureBox = dogPictureBox3;
-            dogs[3].myPictureBox = dogPictureBox4;
+            //dogs object
+            dogs[0] = new Greyhound()
+            {
+                myPictureBox = dogPictureBox1,
+                StartingPosition = raceTrackPictureBox.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - dogPictureBox1.Width,
+                Randomizer = myRandom
+            };
+
+            dogs[1] = new Greyhound()
+            {
+                myPictureBox = dogPictureBox2,
+                StartingPosition = raceTrackPictureBox.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - dogPictureBox2.Width,
+                Randomizer = myRandom
+            };
+
+            dogs[2] = new Greyhound() 
+            {
+                myPictureBox = dogPictureBox3,
+                StartingPosition = raceTrackPictureBox.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - dogPictureBox3.Width,
+                Randomizer = myRandom
+            };
+
+            dogs[3] = new Greyhound()
+            {
+                myPictureBox = dogPictureBox4,
+                StartingPosition = raceTrackPictureBox.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - dogPictureBox4.Width,
+                Randomizer = myRandom
+            };
+
+          
         }
 
         private void betButton_Click(object sender, EventArgs e)
@@ -83,7 +120,10 @@ namespace WindowsFormsApplication6
                     MessageBox.Show("You can not bet this amount!", "Unable to bet amount");
                 }
             }
-            //Update the labels
+            for (int i = 0; i < guys.Length; i++)
+            {
+                guys[i].UpdateLabels();
+            }
         }
 
         private void raceButton_Click(object sender, EventArgs e)
@@ -102,6 +142,21 @@ namespace WindowsFormsApplication6
                     }
                 }
             }
+        }
+
+        private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            label2.Text = guys[0].name;
+        }
+
+        private void bobRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            label2.Text = guys[1].name;
+        }
+
+        private void alRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            label2.Text = guys[2].name;
         }
     }
 };

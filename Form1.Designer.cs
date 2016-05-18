@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.raceTrackPictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.alBetLabel = new System.Windows.Forms.Label();
+            this.bobBetLabel = new System.Windows.Forms.Label();
+            this.joeBetLabel = new System.Windows.Forms.Label();
             this.betsLabel = new System.Windows.Forms.Label();
             this.raceButton = new System.Windows.Forms.Button();
             this.dogNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -49,7 +49,7 @@
             this.dogPictureBox2 = new System.Windows.Forms.PictureBox();
             this.dogPictureBox4 = new System.Windows.Forms.PictureBox();
             this.dogPictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raceTrackPictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betNumericUpDown)).BeginInit();
@@ -59,21 +59,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.dogPictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // raceTrackPictureBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(604, 203);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.raceTrackPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("raceTrackPictureBox.Image")));
+            this.raceTrackPictureBox.Location = new System.Drawing.Point(12, 12);
+            this.raceTrackPictureBox.Name = "raceTrackPictureBox";
+            this.raceTrackPictureBox.Size = new System.Drawing.Size(604, 203);
+            this.raceTrackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.raceTrackPictureBox.TabIndex = 0;
+            this.raceTrackPictureBox.TabStop = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.alBetLabel);
+            this.groupBox1.Controls.Add(this.bobBetLabel);
+            this.groupBox1.Controls.Add(this.joeBetLabel);
             this.groupBox1.Controls.Add(this.betsLabel);
             this.groupBox1.Controls.Add(this.raceButton);
             this.groupBox1.Controls.Add(this.dogNumericUpDown);
@@ -93,32 +93,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting Parlor";
             // 
-            // label6
+            // alBetLabel
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(328, 102);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(268, 23);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "label6";
+            this.alBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alBetLabel.Location = new System.Drawing.Point(328, 102);
+            this.alBetLabel.Name = "alBetLabel";
+            this.alBetLabel.Size = new System.Drawing.Size(268, 23);
+            this.alBetLabel.TabIndex = 15;
+            this.alBetLabel.Text = "label6";
             // 
-            // label5
+            // bobBetLabel
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(328, 73);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(268, 23);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "label5";
+            this.bobBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bobBetLabel.Location = new System.Drawing.Point(328, 73);
+            this.bobBetLabel.Name = "bobBetLabel";
+            this.bobBetLabel.Size = new System.Drawing.Size(268, 23);
+            this.bobBetLabel.TabIndex = 14;
+            this.bobBetLabel.Text = "label5";
             // 
-            // label4
+            // joeBetLabel
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(328, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(268, 23);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "label4";
+            this.joeBetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.joeBetLabel.Location = new System.Drawing.Point(328, 47);
+            this.joeBetLabel.Name = "joeBetLabel";
+            this.joeBetLabel.Size = new System.Drawing.Size(268, 23);
+            this.joeBetLabel.TabIndex = 13;
+            this.joeBetLabel.Text = "label4";
             // 
             // betsLabel
             // 
@@ -222,6 +222,7 @@
             this.alRadioButton.TabStop = true;
             this.alRadioButton.Text = "Al";
             this.alRadioButton.UseVisualStyleBackColor = true;
+            this.alRadioButton.CheckedChanged += new System.EventHandler(this.alRadioButton_CheckedChanged);
             // 
             // bobRadioButton
             // 
@@ -234,6 +235,7 @@
             this.bobRadioButton.TabStop = true;
             this.bobRadioButton.Text = "Bob";
             this.bobRadioButton.UseVisualStyleBackColor = true;
+            this.bobRadioButton.CheckedChanged += new System.EventHandler(this.bobRadioButton_CheckedChanged);
             // 
             // joeRadioButton
             // 
@@ -246,6 +248,7 @@
             this.joeRadioButton.TabStop = true;
             this.joeRadioButton.Text = "Joe";
             this.joeRadioButton.UseVisualStyleBackColor = true;
+            this.joeRadioButton.CheckedChanged += new System.EventHandler(this.joeRadioButton_CheckedChanged);
             // 
             // label1
             // 
@@ -307,10 +310,10 @@
             this.Controls.Add(this.dogPictureBox2);
             this.Controls.Add(this.dogPictureBox1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.raceTrackPictureBox);
             this.Name = "Form1";
             this.Text = "A Day at the Races";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raceTrackPictureBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumericUpDown)).EndInit();
@@ -325,7 +328,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox raceTrackPictureBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown betNumericUpDown;
@@ -336,9 +339,9 @@
         private System.Windows.Forms.RadioButton joeRadioButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown dogNumericUpDown;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label alBetLabel;
+        private System.Windows.Forms.Label bobBetLabel;
+        private System.Windows.Forms.Label joeBetLabel;
         private System.Windows.Forms.Label betsLabel;
         private System.Windows.Forms.Button raceButton;
         private System.Windows.Forms.PictureBox dogPictureBox1;
