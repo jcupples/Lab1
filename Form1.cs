@@ -122,6 +122,7 @@ namespace WindowsFormsApplication6
             }
             for (int i = 0; i < guys.Length; i++)
             {
+                guys[i].PlaceBet((int)betNumericUpDown.Value, (int)dogNumericUpDown.Value);
                 guys[i].UpdateLabels();
             }
         }
@@ -129,7 +130,7 @@ namespace WindowsFormsApplication6
         private void raceButton_Click(object sender, EventArgs e)
         {
 
-            bool noWinner = true;
+            bool noWinner = false;
             int dogWon;
 
             while (noWinner)
@@ -141,6 +142,7 @@ namespace WindowsFormsApplication6
                         dogWon = i + 1;
                     }
                 }
+                Application.DoEvents();
             }
         }
 

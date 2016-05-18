@@ -41,8 +41,12 @@ namespace WindowsFormsApplication6
 
         public bool PlaceBet(int amount, int Dog)
         {
-            //Bet myBet = new Bet();
-           
+                myBet = new Bet();
+                myBet.Dog = Dog;
+                myBet.amount = amount;
+                myBet.Bettor = this;
+                UpdateLabels();
+               
            
 
             //place a new bet and store it in my bet field
@@ -53,10 +57,6 @@ namespace WindowsFormsApplication6
                 return false;
             }
             else
-                myBet.Dog = Dog;
-                myBet.amount = amount;
-                myBet.Bettor = this;
-                UpdateLabels();
                 return true;
         }
 

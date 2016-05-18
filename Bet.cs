@@ -20,7 +20,7 @@ namespace WindowsFormsApplication6
 
             if (amount > 0)
             {
-                 return Bettor.name + " bets " + amount + "on dog #" + Dog;
+                 return Bettor.name + " bets " + amount + " on dog #" + Dog;
             }
             else
                 return Bettor.name + " has not placed a bet!";
