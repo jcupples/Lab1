@@ -10,7 +10,7 @@ namespace WindowsFormsApplication6
     {
 
         public string name; //the guy's name
-        public Bet myBet; //an instance of Bet() that has his bet
+        public Bet myBet = null; //an instance of Bet() that has his bet
         public int cash; //how much cash he has
 
         public RadioButton myRadioButton;
