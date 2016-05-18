@@ -27,7 +27,6 @@ namespace WindowsFormsApplication6
             }
             else {
                 myLabel.Text = myBet.GetDescription();
-                //Why is this not working?
             }
 
             myRadioButton.Text = name + " has " + cash + " bucks";

@@ -129,7 +129,10 @@ namespace WindowsFormsApplication6
                     {
                         dogWon = i +1;
                         MessageBox.Show("The Winner is dog #" + dogWon, "Winner!");
-                        
+                        for (int j = 0; j < dogs.Length; j++)
+                        {
+                            dogs[j].TakeStartingPosition();
+                        }
                     }
                 }
 
