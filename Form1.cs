@@ -119,19 +119,21 @@ namespace WindowsFormsApplication6
             bool noWinner = false;
             int dogWon;
 
-            while (noWinner)
+            while (!noWinner)
             {
-                Application.DoEvents();
+               Application.DoEvents();
 
                 for (int i = 0; i < dogs.Length; i++)
                 {
                     if (dogs[i].Run())
                     {
-                        dogWon = i + 1;
+                        dogWon = i +1;
                         MessageBox.Show("The Winner is dog #" + dogWon, "Winner!");
+                        
                     }
                 }
-                
+
+                //Application.DoEvents();
             }
         }
 
