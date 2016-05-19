@@ -21,6 +21,7 @@ namespace WindowsFormsApplication6
         public bool Run()
         {
             //Random Randomizer = new Random();
+            //testing
 
             int randomMovement = Randomizer.Next(1, 4);
 

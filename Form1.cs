@@ -139,7 +139,7 @@ namespace WindowsFormsApplication6
                 //Application.DoEvents();
             }
         }
-
+        //testing
         private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             label2.Text = guys[0].name;

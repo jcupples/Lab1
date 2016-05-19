@@ -45,7 +45,7 @@ namespace WindowsFormsApplication6
                 myBet.amount = amount;
                 myBet.Bettor = this;
                 UpdateLabels();
-               
+               //testing
            
 
             //place a new bet and store it in my bet field

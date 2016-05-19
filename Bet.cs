@@ -40,5 +40,5 @@ namespace WindowsFormsApplication6
             else
                 return -amount;
         }
-    }
+    } //testing
 }
